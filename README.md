@@ -1,5 +1,8 @@
 # backlog
-A custom switchable logger
+A custom switchable logger </br>
+This a learning project. </br>
+Reference from [spoor](https://github.com/phuhao00/spoor)
+
 ## Installation
 If you'd like to install this locally, you can go get it.
 ````sh
