@@ -49,12 +49,12 @@ func (b *BackLog) checkLevel(level Level) bool {
 	return true
 }
 
-//DebugF Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+// DebugF Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
 func (b *BackLog) DebugF(f string, args ...interface{}) {
 	if b.checkLevel(Debug) {
 		return
 	}
-	b.l.Output(3, fmt.Sprintf(Debug.String()+" "+f, args...))
+	b.l.Output(2, fmt.Sprintf(Debug.String()+" "+f, args...))
 }
 
 func (b *BackLog) InfoF(f string, args ...interface{}) {
